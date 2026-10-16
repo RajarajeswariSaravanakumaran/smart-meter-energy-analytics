@@ -1,0 +1,7 @@
+val df = spark.read.option("header", "true").option("inferSchema", "true").csv("hdfs://namenode:9000/data/raw/old-london-dataset-review1/processed/house_daily")
+println("=== LONDON DAILY DATA: SCHEMA ===")
+df.printSchema()
+println("=== ROW COUNT === " + df.count())
+println("=== FIRST 5 ROWS ===")
+df.show(5, false)
+System.exit(0)

@@ -1,0 +1,69 @@
+﻿# Raw London Smart Meter data
+old-london-dataset-review1/daily_dataset.csv
+old-london-dataset-review1/daily_dataset/
+old-london-dataset-review1/halfhourly_dataset/
+old-london-dataset-review1/hhblock_dataset/
+old-london-dataset-review1/acorn_details.csv
+old-london-dataset-review1/informations_households.csv
+old-london-dataset-review1/uk_bank_holidays.csv
+old-london-dataset-review1/weather_daily_darksky.csv
+old-london-dataset-review1/weather_hourly_darksky.csv
+
+# UK-REFIT raw household data
+**/House_*.csv
+UK-REFIT/csv/
+UK-REFIT/data/
+
+# Generated outputs and backups
+UK-REFIT/output/
+**/processed/
+**/forecast_improved/
+**/spark-warehouse/
+**/metastore_db/
+**/_backup_*/
+
+# Compiled artifacts
+*.jar
+*.class
+target/
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Secrets and local environment configuration
+.env
+.env.*
+!.env.example
+
+# Logs and operating-system files
+*.log
+*.out
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Large archives
+*.zip
+
+# Historical duplicate Scala versions
+old-london-dataset-review1/code/*backup*.scala
+old-london-dataset-review1/code/*before*.scala
+old-london-dataset-review1/code/*pre_package*.scala
+
+# Scala IDE and build caches
+**/.bsp/
+**/.metals/
+**/.metals-scala-cli/
+**/.scala-build/
+**/metals.mv.db
+
+# Generated diagnostic artifacts
+/london_hdfs_listing.txt
+old-london-dataset-review1/code/META-INF/
+
+# Empty legacy preprocessing file
+UK-REFIT/code/UKRefitPreprocessing.scala

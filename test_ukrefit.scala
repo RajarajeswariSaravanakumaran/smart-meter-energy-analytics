@@ -1,0 +1,6 @@
+val df = spark.read.parquet("hdfs://namenode:9000/data/processed/UKrefit/appliance_hourly_summary")
+println("SCHEMA:")
+df.printSchema()
+println("ROW COUNT: " + df.count())
+df.show(5, false)
+System.exit(0)
